@@ -1,0 +1,95 @@
+Git ==> 
+It's distributed version control systems also known as source code management tool, 
+Most widely used and help developer to msnage source code and track on changes.
+
+After gitbash installed, Making dir. D:/> Git_Study right click in this dir and click on gitbash.exe
+$ git init .    ==> observ master / main branch are set and .git dir is created or not.
+
+$ git config --global user.name "Sopan.Sonar"
+
+$ git config --global user.email"sopan.sonar@gmail.com"
+$ git config --global --list
+$ mkdir D:\Git_Study\
+$ cd D:\Git_Study\    ==> going to this folder and right click and select gitbash, we move into this dir.
+
+$ git init          ==> initialise git in a folder
+
+$ cat > one.java    ==> this done in main branch
+  line One
+  line Two
+  line Three
+  line Four
+  line Five
+  line Six
+
+$ git add .         ==> all files are move to staging area.
+$ git commit -m "A"  ==> commited all the created files
+$ git commit --amend -m "A"    ==>  any miner changes in files / commit id never changes re-commit consept
+
+###### Role Back Privious commit #####
+$ git reset --hard  <commit id>
+
+###### Usefull log options #####
+$ git log -p -2  ==> last 2 commit with diff.
+$ git log --stat ==> showing sammary of changes.
+====================================================
+
+vi two.java
+   Wel Come to Git Stady
+   this is my first git file
+
+$ git add .         ==> all files are move to staging area.
+$ git commit -m "B"  ==> commited all the created files
+$ git status 		       ==> dislay files moved from staging area to repo dir.
+
+
+
+=============================================================
+$ git chackout test   ==> switch into test branch
+
+$ touch F1 F2   
+
+$ git add .         ==> all files are move to staging area.
+$ git commit -m "C"  ==> commited all the created files
+
+$ touch F3 F4 
+git add . 
+$ git commit --amend -m "D"   
+
+$ touch F5 F6
+git add . 
+$ git commit --amend -m "E"   
+
+$ git log --oneline   ==>  display nomers of commited file in one line
+$ git rebase main 
+$ git chackout main
+$ git merge test      ==> all files into main branch
+$ git log --oneline 
+
+RENAME THE COMMITED FILES ==>
+$ git rebase -i HEAD ~ < Files commited code>
+$ git cherry-pick < Files commited code>
+
+#### Some Time Devloper need to hide some files #######
+touch one.class
+touch one.java
+
+touch two.class
+touch two.java
+
+touch three.class
+touch three.java
+
+If we want to hide / ingonre *.Class file, added that file in .gitignore file
+
+$ vi .gitgnore
+  *.class / one.class
+$ git commit -m "first commit"
+$ git status
+
+
+
+
+
+
+
