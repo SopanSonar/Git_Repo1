@@ -9,9 +9,21 @@ $ git config --global user.name "Sopan.Sonar"
 
 $ git config --global user.email"sopan.sonar@gmail.com"
 $ git config --global --list
-$ mkdir D:\Git_Study\
-$ cd D:\Git_Study\    ==> going to this folder and right click and select gitbash, we move into this dir.
+=============================================================================================================
+### First Create Git_Repo on Github repositary ################
+Copy url https://github.com/SopanSonar/Git_Repo1.git
 
+$ mkdir D:\Git_Repo\
+$ cd D:\Git_Repo\    ==> going to this folder and right click and select gitbash, we move into this dir.
+
+Past URL 
+$ git clone https://github.com/SopanSonar/Git_Repo1.git
+$ cd Git_Repo
+
+######  edit ready files which we wants to uplaod on github repository ######
+$ git push -u origin main    ==> use for data upload on github on same repo same branch
+
+==============================================================================================================
 $ git init          ==> initialise git in a folder
 
 $ cat > one.java    ==> this done in main branch
